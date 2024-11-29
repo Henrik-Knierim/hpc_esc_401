@@ -33,7 +33,7 @@ void forces(particles &plist) {
 	    auto dx = plist[j].x - plist[i].x;
 	    auto dy = plist[j].y - plist[i].y;
 	    auto dz = plist[j].z - plist[i].z;
-	    auto r = sqrtf(dx*dx + dy*dy + dz*dz);
+	    auto r = sqrt(dx*dx + dy*dy + dz*dz);
 	    auto ir3 = 1 / (r*r*r);
 	    ax += dx * ir3;
 	    ay += dy * ir3;
